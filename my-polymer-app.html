@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`my-polymer-app`
+Small polymer app from tutorial
+
+@demo demo/index.html 
+-->
+
+<dom-module id="my-polymer-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'my-polymer-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'my-polymer-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
